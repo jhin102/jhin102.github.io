@@ -1,0 +1,127 @@
+/* import fonts */
+
+@font-face {
+    font-family: 'MonoplexKRNerd-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-nerd@1.0/MonoplexKRNerd-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MonoplexKRNerd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-nerd@1.0/MonoplexKRNerd.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family : 'MonoplexKRNerd-Bold'
+}
+
+#menu-bar {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 900;
+    left: 0;
+    top: 0;
+    /* background-color: bisque; */
+}
+
+#logo {
+    position: absolute;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    z-index: 50;
+    padding: 10px 10px 0px 30px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #5c5c5c;
+}
+
+#menu-container {
+    font-family : 'MonoplexKRNerd-Bold';
+    font-size: 15px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 25px;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#menu-container ul {
+    display: block;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+#menu-container li {
+    display: inline;
+    list-style-type: none;
+    list-style: none;
+    padding: 0 10px;
+}
+
+#menu-container a {
+    text-decoration: none;
+    color: #5c5c5c;
+}
+
+#wrapper {
+    display: block;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    margin: 100px auto 0;
+    overflow: hidden;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+#contents {
+    position: relative;
+    padding: 50px 40px 0;
+}
+
+.contents-blog {
+    padding: 70px 0 0 0;
+}
+
+.contents-meta {
+    font-family : 'MonoplexKRNerd-Bold';
+    margin: 0 0 30px 0;
+    padding-bottom: 2px;
+    letter-spacing: 1pt;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contents-meta h1{
+    font-size: 32px;
+    line-height: 42px;
+    color: #1c1c1c;
+}
+
+.contents-meta p{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #aaa;
+    padding-bottom: 42px;
+}
+
+.contents-meta a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.contents-body{
+    font-family : 'MonoplexKRNerd';
+    color: #575757;
+}
