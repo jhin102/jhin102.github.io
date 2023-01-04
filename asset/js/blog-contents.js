@@ -11,7 +11,7 @@ function contentsLoad() {
         const metadataRaw = data.slice(data.indexOf('<!--') + '<!--'.length, data.indexOf('-->'))
 
         const metadata = {}
-        for (let line of metadataRaw.split('\r\n').slice(2, -2)) {
+        for (let line of metadataRaw.split('\n').slice(2, -2)) {
             metadata[line.split(':')[0]] = line.split(': ')[1]
         }
 
