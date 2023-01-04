@@ -10,10 +10,15 @@ function contentsLoad() {
         const contentsBody = document.getElementById('contents-body')
         const metadataRaw = data.slice(data.indexOf('<!--') + '<!--'.length, data.indexOf('-->'))
 
+
+        console.log(metadataRaw)
+
         const metadata = {}
         for (let line of metadataRaw.split('\n').slice(2, -2)) {
             metadata[line.split(':')[0]] = line.split(': ')[1]
         }
+
+        console.log(metadata)
 
         if (!metadata.thumnail) {
             metadata.thumnail = '/asset/image/default-thumnail.png'
