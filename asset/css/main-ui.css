@@ -8,14 +8,15 @@
 }
 
 @font-face {
-    font-family: 'MonoplexKRNerd';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-nerd@1.0/MonoplexKRNerd.woff2') format('woff2');
-    font-weight: 400;
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family : 'MonoplexKRNerd-Bold'
+    font-family : 'MonoplexKRNerd-Bold';
+    margin: 0;
 }
 
 #menu-bar {
@@ -90,11 +91,11 @@ body {
     padding: 50px 40px 0;
 }
 
-.contents-blog {
+#contents-blog {
     padding: 70px 0 0 0;
 }
 
-.contents-meta {
+#contents-meta {
     font-family : 'MonoplexKRNerd-Bold';
     margin: 0 0 30px 0;
     padding-bottom: 2px;
@@ -103,25 +104,69 @@ body {
     text-align: center;
 }
 
-.contents-meta h1{
+#contents-meta h1 {
     font-size: 32px;
     line-height: 42px;
     color: #1c1c1c;
 }
 
-.contents-meta p{
+#contents-meta p {
     font-size: 12px;
     text-transform: uppercase;
     color: #aaa;
     padding-bottom: 42px;
 }
 
-.contents-meta a{
+#contents-meta a {
     text-decoration: none;
     color: inherit;
 }
 
-.contents-body{
-    font-family : 'MonoplexKRNerd';
+#contents-meta img {
+    max-width: 1000px;
+    max-height: 560px;
+}
+
+#contents-body {
+    font-family : 'NanumSquareNeo-Variable';
+    letter-spacing: 1pt;
+    line-height: 22px;
     color: #575757;
+}
+
+#contents-footer {
+    display: block;
+}
+
+#contents-footer ul{
+    margin: 40px 0;
+    padding: 0;
+    float: left;
+}
+
+#contents-footer li{
+    font-family : 'MonoplexKRNerd-Bold';
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    font-size: 12px;
+    height: 26px;
+    letter-spacing: -1px;
+    line-height: 26px;
+    min-width: 15px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+#contents-footer li a{
+    text-decoration: none;
+    color: #959595;
+}
+
+#contents-blog-recommended {
+    padding: 0;
+    margin: 0;
+    height: 200px;
+    width: 100%;
+    background-color: #1c1c1c;
 }
