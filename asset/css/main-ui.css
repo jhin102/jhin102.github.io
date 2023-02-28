@@ -125,6 +125,7 @@ body {
 #contents-meta img {
     max-width: 1000px;
     max-height: 560px;
+    width: 100%;
 }
 
 #contents-body {
