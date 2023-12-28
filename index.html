@@ -7,12 +7,12 @@
     <title>나이계산기</title>
 </head>
 <body>
-    <div style="width:600px; margin:0 auto;">
-        <img style="width:600px" src ='./badthing.png'>
-        <hr>
+    <div style="width:700px; margin:0 auto;">
+        <br>
+        <h2>게임산업 청소년 연령 기준 계산기</h1>
         <div class="w-50 p-3" >
             생년월일 :
-            <input type="date" value="2006-12-31" class="form-control" id="date"/>
+            <input type="date" value="2005-12-31" class="form-control" id="date"/>
             <br>
             오늘날짜 :
             <input type="date" class="form-control" id="date2"/>
@@ -38,27 +38,45 @@
                 <td>게임이 되어야 하는가? (개정)</td>
                 <td id="canPlay2"></td>
             </tr>
+            <tr>
+                <td>결제가 되어야 하는가? (현행)</td>
+                <td id="canPay1"></td>
+            </tr>
+            <tr>
+                <td>결제가 되어야 하는가? (개정)</td>
+                <td id="canPay2"></td>
+            </tr>
         </table>
+        <hr>
+        <details>
+            <img style="width:600px" src ='./badthing.png'>
+            <img style="width:800px" src ='./badthing2.png'>
+         </details>
     </div>
     <script>
         function calc() {
-            let birthDate = new Date(document.querySelector('#date').value);
-            let today = new Date(document.querySelector('#date2').value);
+            const birthDate = new Date(document.querySelector('#date').value)
+            const today = new Date(document.querySelector('#date2').value)
 
-            let age1 = today.getFullYear() - birthDate.getFullYear() + 1;
-            let age2 = age1 - 1;
-            const m = today.getMonth() - birthDate.getMonth();
+            const age1 = today.getFullYear() - birthDate.getFullYear() + 1
+            let age2 = age1 - 1
+            const m = today.getMonth() - birthDate.getMonth()
             if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-                age2--;
+                age2--
             }
 
-            canPlay1 = age2 >= 18
-            canPlay2 = age1 >= 20
+            const canPlay1 = age2 >= 18
+            const canPlay2 = age1 >= 20
+
+            const canPay1 = age2 >= 19
+            const canPay2 = age2 >= 19
 
             document.getElementById("age1").innerHTML=age1;
             document.getElementById("age2").innerHTML=age2;
             document.getElementById("canPlay1").innerHTML=canPlay1;
             document.getElementById("canPlay2").innerHTML=canPlay2;
+            document.getElementById("canPay1").innerHTML=canPay1;
+            document.getElementById("canPay2").innerHTML=canPay2;
         };
     </script>
 </body>
