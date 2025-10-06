@@ -5,46 +5,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/asset/css/main-ui.css">
-    <script src="/asset/js/external-library/showdown.min.js"></script>
     <script type="module" src="/asset/js/app.js"></script>
-    <script src="https://giscus.app/client.js"
-        data-repo="jhin102/jhin102.github.io"
-        data-repo-id="R_kgDOItj-LQ"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOItj-Lc4CTZMZ"
-        data-mapping="url"
-        data-strict="1"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="light_protanopia"
-        data-lang="ko"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-    </script>
     <title>JHIN.LOG</title>
 </head>
 <body>
     <div id="wrapper">
         <div id="container">
             <div id="contents">
-                <div id="contents-blog">
-                    <div id="contents-meta"></div>
-                    <div id="contents-body"></div>
-                    <div id="contents-footer">
-                        <ul class="tag-list">
-                            <li class="tag-item"><a href="#">블로그 개발 일지</a></li>
-                        </ul>
-                        <div class="giscus">
-
+                <header class="header fade-in">
+                    <div class="header-content">
+                        <h1 class="name">이상진</h1>
+                        <h2 class="title">Software Engineer</h2>
+                        <p class="subtitle">5년차 백엔드 엔지니어 | 웹 서비스 개발</p>
+                        <div class="contact-info">
+                            <a href="mailto:saojin10@naver.com" class="contact-item">
+                                saojin10@naver.com
+                            </a>
+                            <a href="tel:010-8470-2116" class="contact-item">
+                                010-8470-2116
+                            </a>
+                            <a href="https://github.com/jhin102" class="contact-item">
+                                GitHub
+                            </a>
+                            <a href="https://nogan.tistory.com/" class="contact-item">
+                                Blog
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div id="contents-blog-recommended">
+                </header>
+        
+                <section class="section fade-in">
+                    <h2 class="section-title">기술스택</h2>
+                    <div>
+                        <div class="tech-category">
+                            <h4>프로그래밍 언어</h4>
+                            <p class="tech-list">- <strong>java, python</strong>, javascript, C#<br> 
+                        </div>
+                        <div class="tech-category">
+                            <h4>프레임워크</h4>
+                            <p class="tech-list">- <strong>springboot, spring</strong>, asp .net, node.js, vue<br>
+                        </div>
+                        <div class="tech-category">
+                            <h4>데이터베이스</h4>
+                            <p class="tech-list">- <strong>mysql, postgresql, dynamodb</strong>, ms-sql
+                        </div>
+                        <div class="tech-category">
+                            <h4>인프라 및 기술 경험</h4>
+                            <p class="tech-list">- <strong>aws :</strong> ec2, s3, cloudfront, dynamodb, lambda<br>
+                            - jenkins, ansible, apache kafka, apache nifi
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="section fade-in">
+                    <h2 class="section-title">경력사항</h2>
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <h3 class="job-title">카카오게임즈</h3>
+                            <span class="company-period">웹서비스개발셀 | 2020.11 ~ 현재</span>
+                        </div>
+                        <ul class="achievements">
+                            <li>홈페이지, 이벤트등 게임 퍼블리싱에 필요한 웹 페이지 및 어드민 개발</li>
+                            <li>카카오게임즈 PC방 서비스 운영 및 유지보수</li>  
+                            <li>카카오게임즈 DM 발송 서비스 운영 및 유지보수</li>                   
+                            <li>온프레미스, 클라우드 환경에서의 서비스 운영</li>                   
+                            <li>Windows, Linux 서버에서의 서비스 운영</li>
+                        </ul>
+                    </div>
+                </section>
+        
+                <section class="section fade-in">
+                    <h2 class="section-title">학력</h2>
+                    <div class="education-item">
+                        <h3 class="education-title">광운대학교 소프트웨어학부</h3>
+                        <p class="education-details">2014.03 ~ 2021.02 | GPA: 3.74/4.5</p>
+                    </div>
+                </section>
 
+                <section class="section fade-in">
+                    <h2 class="section-title">프로젝트 참여</h2>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">컨텐츠 관리 API 개발</h3>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">DynamoDB</span>
+                            <span class="tech-tag">Mysql</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                        <ul class="project-achievements">
+                            <li>컨텐츠 제공 API와 어드민으로 구성된 컨텐츠 관리 시스템 개발</li>
+                            <li>게임별로 다른 데이터 구조를 nosql을 이용하여 별도 테이블 생성 없이 서비스 가능 하도록 설계</li>
+                            <li>API 장애 상황을 대비하여, 일정 간격으로 응답값을 CDN으로 업로드 </li>
+                        </ul>
+                    </div>
+        
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">카카오게임즈 PC방 서비스 유지보수</h3>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Springboot</span>
+                            <span class="tech-tag">ASP.NET</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                        <ul class="project-achievements">
+                            <li>카카오게임즈의 B2B 사업 중 하나인 PC방 서비스 담당</li>
+                            <li>공식 홈페이지 (회원, 결제), 빌링 API (PG사 연동, 세금계산서 발행 등 회계 처리), 운영 어드민 등 개발</li>
+                            <li>매년 ISMS-P, ITGC 및 각종 인증 심사와 보안 심사 대응</li>
+                            <li>대규모 인프라 이관 및 마이그레이션션 진행 (온프레미스 → AWS, MS-SQL → PostgreSQL, ASP.NET → Springboot)</li>
+                        </ul>
+                    </div>
+                </section>
+        
+                <section class="section fade-in">
+                    <h2 class="section-title">AI에 관하여</h2>
+                    <div>
+                        새로운 지식을 받아들이는데 두려워 하지 않습니다. <br>
+                        다만 TV가 작은 인간들이 뛰어다니는 상자가 아니듯이, AI를 마법이라고 생각하지는 않습니다. <br>
+                        기술을 정확한 명칭으로 부르고 이해하며 사용하려고 합니다.
+                    </div>
+                    <br>
+                    <h3>AI 블로그 게시글</h2>
+                    <br>
+                    <div class="tech-grid">
+                        <a class="skill-item" href="https://nogan.tistory.com/52" target="_blank">[논문 리뷰] 추론 모델과 COT를 이해하면서, 애플의 The Illusion of Thinking 논문 초록 읽기</a>
+                        <a class="skill-item" href="https://nogan.tistory.com/50" target="_blank">QLoRA: Efficient Finetuning of Quantized LLMs - Abstract, Background</a>
+                        <a class="skill-item" href="https://nogan.tistory.com/49" target="_blank">OpenAI, LLM, ChatGPT</a>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
 </body>
