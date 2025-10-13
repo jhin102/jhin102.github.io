@@ -7,7 +7,7 @@ function insertMenuBar() {
         <ul class="menu-list">
             <li class="memu-item"><a href="/">about</a></li>
             <li class="memu-item"><a href="/blog.html">blog</a></li>
-            <li class="memu-item"><a href="#">projects</a></li>
+            <li class="memu-item"><a href="/projects.html">projects</a></li>
         </ul>
     </div>
     `
