@@ -33,10 +33,6 @@ strong {
     color: #6d6d6d;
 }
 
-.noborder {
-    border: none;
-}
-
 .card {
     padding: 25px 0;
     margin-bottom: 0;
@@ -52,6 +48,7 @@ hr {
   height: 1px;
   color: #eee;
   background-color: #eee;
+  animation: fadeIn 0.8s ease-in-out forwards;
 }
 
 /* Header */
