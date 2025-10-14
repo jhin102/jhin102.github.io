@@ -1,40 +1,73 @@
 /* Portfolio Styles */
-.header {
+section {
+    padding: 30px 0;   
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+strong {
+    font-weight: 500;
+    color: #6d6d6d;
+    background-color: #D7E8BC;
+}
+
+.list-section {
+    font-size: 0.8em;
+    color: #575757;
+    line-height: 22px;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-section li {
+    margin-bottom: 6px;
+}
+
+.list-section li::before {
+    content: "- ";
+    color: #5c5c5c;
+}
+
+.grey {
+    color: #6d6d6d;
+}
+
+.noborder {
+    border: none;
+}
+
+.card {
+    padding: 25px 0;
+    margin-bottom: 0;
+}
+
+.card-bottom {
+    padding: 25px 0 0 0;
+    margin-bottom: 0;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  color: #eee;
+  background-color: #eee;
+}
+
+/* Header */
+
+header {
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    margin-top: 98px;
     padding: 30px 0;
-    border-bottom: 1px solid #ddd;
+    display: block;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
 }
 
-
-.header-content {
-    flex: 1;
-}
-
-.name {
-    font-family: 'MonoplexKRNerd-Bold';
-    font-size: 32px;
-    font-weight: 700;
-    color: #1c1c1c;
-    margin: 0 0 24px 0;
-    letter-spacing: 1px;
-}
-
-
-.title {
-    font-family: 'MonoplexKRNerd-Bold';
-    font-size: 18px;
-    font-weight: 500;
-    color: #5c5c5c;
-    margin: 0 0 12px 0;
-    letter-spacing: 0.5px;
-}
-
-.subtitle {
-    font-family: 'NanumSquareNeo-Variable';
-    font-size: 15px;
-    color: #575757;
+.subtitle {    
+    font-size: 0.8em;
     margin: 0 0 20px 0;
     line-height: 22px;
 }
@@ -46,11 +79,10 @@
 }
 
 .contact-item {
-    font-family: 'NanumSquareNeo-Variable';
-    font-size: 12px;
+    font-size: 0.6em;
     color: #ffffff;
-    background-color: #5c5c5c;
-    padding: 2px 8px;
+    background-color: #6d6d6d;
+    padding: 4px 8px;
     border: 1px solid #ddd;
     font-weight: 500;
     text-decoration: none;
@@ -58,58 +90,10 @@
 }
 
 .contact-item:hover {
-    background-color: #5c5c5cc2;
-    border-bottom-color: #1c1c1c;
+    background-color: #6d6d6dc2;
 }
 
-.section {
-    margin-bottom: 50px;
-}
-
-.section-title {
-    font-family: 'MonoplexKRNerd-Bold';
-    font-size: 24px;
-    font-weight: 700;
-    color: #1c1c1c;
-    margin: 0 0 15px 0;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.tech-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    margin-bottom: 20px;
-}
-
-.tech-category {
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
-}
-
-.tech-category h4 {
-    font-family: 'MonoplexKRNerd-Bold';
-    font-size: 15px;
-    font-weight: 700;
-    color: #5c5c5c;
-    margin: 0 0 12px 0;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-}
-
-.tech-list {
-    font-family: 'NanumSquareNeo-Variable';
-    font-size: 14px;
-    color: #575757;
-    line-height: 22px;
-    margin-left: 5px;
-}
-
-.experience-item {
-    padding: 25px 0;
-    border-bottom: 1px solid #eee;
-}
+/* 경력 */
 
 .job-header {
     display: flex;
@@ -119,68 +103,18 @@
 }
 
 .job-title {
-    font-family: 'MonoplexKRNerd-Bold';
-    font-size: 18px;
-    font-weight: 700;
-    color: #1c1c1c;
     margin: 0;
     letter-spacing: 0.5px;
 }
 
 .company-period {
-    font-family: 'NanumSquareNeo-Variable';
-    font-size: 14px;
-    color: #5c5c5c;
-    margin: 0;
-    font-weight: 500;
-}
-
-.job-description {
-    font-family: 'NanumSquareNeo-Variable';
-    font-size: 15px;
-    color: #575757;
-    line-height: 22px;
-    margin: 0 0 15px 0;
-}
-
-.achievements {
-    font-family: 'NanumSquareNeo-Variable';
-    font-size: 14px;
-    color: #575757;
-    line-height: 22px;
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-}
-
-.achievements li {
-    margin-bottom: 6px;
-}
-
-.achievements li::before {
-    content: "- ";
-    color: #5c5c5c;
-}
-
-.project-card {
-    padding: 25px 0;
-    border-bottom: 1px solid #eee;
-    margin-bottom: 0;
-}
-
-.project-header {
-    margin-bottom: 15px;
-}
-
-.project-title {
     font-family: 'MonoplexKRNerd-Bold';
-    font-size: 17px;
-    font-weight: 700;
+    font-size: 0.8em;
     color: #5c5c5c;
-    margin: 0 0 4px 0;
-    letter-spacing: 0.5px;
+    margin: 0;
 }
 
+/* 프로젝트 */
 
 .tech-stack {
     display: flex;
@@ -190,76 +124,11 @@
 }
 
 .tech-tag {
-    font-family: 'NanumSquareNeo-Variable';
     font-size: 12px;
     color: #5c5c5c;
     padding: 2px 8px;
     border: 1px solid #ddd;
     font-weight: 500;
-}
-
-
-.project-achievements {
-    font-family: 'NanumSquareNeo-Variable';
-    font-size: 14px;
-    color: #575757;
-    line-height: 22px;
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-}
-
-.project-achievements li {
-    margin-bottom: 6px;
-}
-
-.project-achievements li::before {
-    content: "- ";
-    color: #5c5c5c;
-}
-
-.education-item {
-    padding: 25px 0;
-    border-bottom: 1px solid #eee;
-}
-
-.education-title {
-    font-family: 'MonoplexKRNerd-Bold';
-    font-size: 17px;
-    font-weight: 700;
-    color: #1c1c1c;
-    margin: 0 0 6px 0;
-    letter-spacing: 0.5px;
-}
-
-.education-details {
-    font-family: 'NanumSquareNeo-Variable';
-    font-size: 14px;
-    color: #5c5c5c;
-    margin: 0;
-    font-weight: 500;
-}
-
-.skill-item {
-    display: block;
-    font-family: 'NanumSquareNeo-Variable';
-    font-size: 14px;
-    color: #575757;
-    text-decoration: none;
-    padding: 12px 0;
-    border-bottom: 1px solid #eee;
-    margin-bottom: 0;
-    transition: all 0.3s ease;
-}
-
-.skill-item:hover {
-    color: #1c1c1c;
-    border-bottom-color: #1c1c1c;
-}
-
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 0.8s ease-in-out forwards;
 }
 
 @keyframes fadeIn {

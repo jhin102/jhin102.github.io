@@ -15,22 +15,44 @@
 }
 
 body {
-    font-family : 'MonoplexKRNerd-Bold';
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 20px;
+    color: #1c1c1c;
     margin: 0;
 }
 
+h1 {
+    font-size: 2em;
+    margin: 0 0 24px 0;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin: 0 0 12px 0;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    font-size: 0.9em;
+    margin: 0 0 12px 0;
+    letter-spacing: 0.5px;
+}
+
 #menu-bar {
+    font-family: 'MonoplexKRNerd-Bold';
     position: fixed;
     width: 100%;
     height: 50px;
-    z-index: 900;
+    z-index: 100;
     left: 0;
     top: 0;
-    /* background-color: bisque; */
 }
 
 #logo {
-    position: absolute;
+    font-family: 'MonoplexKRNerd-Bold';
+    font-size: 12px;
+    position: absolute;    
     left: 0px;
     width: 50px;
     height: 50px;
@@ -38,18 +60,15 @@ body {
     padding: 10px 10px 0px 30px;
     overflow: hidden;
     text-decoration: none;
-    color: #5c5c5c;
+    color: #6d6d6d;
 }
 
 #menu-container {
-    font-family : 'MonoplexKRNerd-Bold';
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 0.8em;
     height: 50px;
     line-height: 25px;
     overflow: hidden;
     text-align: center;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
@@ -69,7 +88,7 @@ body {
 
 #menu-container a {
     text-decoration: none;
-    color: #5c5c5c;
+    color: #6d6d6d;
 }
 
 #wrapper {
@@ -83,11 +102,11 @@ body {
 }
 
 #container {
+    padding: 0 20px;
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 712px;
 }
 
 #contents {
     position: relative;
-    padding: 50px 40px 0;
 }
