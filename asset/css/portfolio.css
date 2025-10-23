@@ -1,4 +1,27 @@
 /* Portfolio Styles */
+
+/* CSS Variables for Portfolio */
+:root {
+    --accent-bg: #D7E8BC;
+    --accent-text: #6d6d6d;
+    --border-color: #eee;
+    --border-dark: #ddd;
+    --button-bg: #6d6d6d;
+    --button-text: #ffffff;
+}
+
+/* 시스템 다크모드 감지 */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --accent-bg: #3a4a2a;
+        --accent-text: #b8c9a8;
+        --border-color: #333;
+        --border-dark: #444;
+        --button-bg: #505050;
+        --button-text: #ffffff;
+    }
+}
+
 section {
     padding: 30px 0;   
     opacity: 0;
@@ -7,13 +30,13 @@ section {
 
 strong {
     font-weight: 500;
-    color: #6d6d6d;
-    background-color: #D7E8BC;
+    color: var(--accent-text);
+    background-color: var(--accent-bg);
 }
 
 .list-section {
     font-size: 0.8em;
-    color: #575757;
+    color: var(--text-secondary);
     line-height: 22px;
     margin: 0;
     padding-left: 0;
@@ -26,11 +49,11 @@ strong {
 
 .list-section li::before {
     content: "- ";
-    color: #5c5c5c;
+    color: var(--text-tertiary);
 }
 
 .grey {
-    color: #6d6d6d;
+    color: var(--text-tertiary);
 }
 
 .card {
@@ -46,8 +69,8 @@ strong {
 hr {
   border: none;
   height: 1px;
-  color: #eee;
-  background-color: #eee;
+  color: var(--border-color);
+  background-color: var(--border-color);
   animation: fadeIn 0.8s ease-in-out forwards;
 }
 
@@ -77,17 +100,17 @@ header {
 
 .contact-item {
     font-size: 0.6em;
-    color: #ffffff;
-    background-color: #6d6d6d;
+    color: var(--button-text);
+    background-color: var(--button-bg);
     padding: 4px 8px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-dark);
     font-weight: 500;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .contact-item:hover {
-    background-color: #6d6d6dc2;
+    opacity: 0.8;
 }
 
 /* 경력 */
@@ -107,7 +130,7 @@ header {
 .company-period {
     font-family: 'MonoplexKRNerd-Bold';
     font-size: 0.8em;
-    color: #5c5c5c;
+    color: var(--text-tertiary);
     margin: 0;
 }
 
@@ -122,9 +145,9 @@ header {
 
 .tech-tag {
     font-size: 12px;
-    color: #5c5c5c;
+    color: var(--text-tertiary);
     padding: 2px 8px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-dark);
     font-weight: 500;
 }
 
