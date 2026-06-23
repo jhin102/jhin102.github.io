@@ -5,9 +5,9 @@ function insertMenuBar() {
     <a id="logo" href="/"> JHIN .LOG </a>
     <div id="menu-container">
         <ul class="menu-list">
-            <li class="memu-item"><a href="/">ABOUT</a></li>
-            <li class="memu-item"><a href="/blog.html">BLOG</a></li>
-            <li class="memu-item"><a href="/projects.html">PROJECTS</a></li>
+            <li class="memu-item"><a href="https://jhin102.github.io/">ABOUT</a></li>
+            <li class="memu-item"><a href="https://nogan.tistory.com/">BLOG</a></li>
+            <li class="memu-item"><a href="https://jhin102.github.io/projects.html">PROJECTS</a></li>
         </ul>
     </div>
     `
