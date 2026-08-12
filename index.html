@@ -17,7 +17,7 @@
                 <header>
                     <h1 class="name">이상진</h1>
                     <h2 class="grey">Software Engineer</h2>
-                    <p class="subtitle">5년차 백엔드 엔지니어 | 웹 서비스 개발</p>
+                    <p class="subtitle">6년차 백엔드 엔지니어 | 웹 서비스 개발</p>
                     <div class="contact-info">
                         <a href="mailto:saojin10@naver.com" class="contact-item">
                             saojin10@naver.com
@@ -36,18 +36,14 @@
                     <div>
                         <h3 class="grey no-margin">Backend</h3>
                         <ul class="list-section">
-                            <li>Spring Boot, Spring MVC, ASP.NET</li>
-                            <li>Java, Python, C#</li>
-                            <li>IntelliJ, Visual Studio, Visual Studio Code</li>
+                            <li>Language: Java, Python, C#</li>
+                            <li>Framework: Spring Boot, Spring MVC, ASP.NET</li>
                         </ul>
-                        <h3 class="grey no-margin">Infrastructure / DevOps</h3>
+                        <h3 class="grey no-margin">Infrastructure / DevOps / Database</h3>
                         <ul class="list-section">
-                            <li>DB: MySQL, SQL Server, PostgreSQL, Babelfish</li>
-                            <li>NoSQL / Cache: DynamoDB, Redis</li>
-                            <li>CI/CD: Jenkins, Ansible</li>
-                            <li>Web Server: nginx, IIS</li>
-                            <li>Observability: ELK</li>
-                            <li>Messaging / Data Pipeline: Kafka, NiFi</li>
+                            <li>Database & Cache: MySQL, PostgreSQL, DynamoDB, Redis</li>
+                            <li>Data Pipeline & Messaging: Kafka, NiFi</li>
+                            <li>DevOps & Observability: Jenkins, Ansible, Nginx, ELK</li>
                         </ul>
                         <h3 class="grey no-margin">Frontend</h3>
                         <ul class="list-section">
@@ -63,29 +59,50 @@
                             <h3 class="job-title">카카오게임즈</h3>
                             <span class="company-period">웹서비스개발셀 | 2020.11 ~ 현재</span>
                         </div>
-                        <ul class="list-section">
-                            <li>홈페이지, 이벤트등 <strong>게임 퍼블리싱에 필요한 웹 페이지 및 서비스 개발</strong></li>
-                            <li>카카오게임즈 PC방 서비스 운영 및 유지보수</li>  
-                            <li>카카오게임즈 DM 발송 서비스 운영 및 유지보수</li>                   
-                            <li>온프레미스, 클라우드 환경에서의 서비스 운영</li>                   
-                            <li>Windows, Linux 서버에서의 서비스 운영</li>
-                        </ul>
-                    </div>
-                </section>
-                <hr>
-                <section>
-                    <h2>학력</h2>
-                    <div class="education-item">
-                        <h3>광운대학교 소프트웨어학부</h3>
-                        <ul class="list-section">
-                            <li>2014.03 ~ 2021.02</li>
-                        </ul>
+                    <ul class="list-section">
+                        <li>홈페이지 및 이벤트 등 <strong>게임 퍼블리싱 기반 웹 서비스 개발 및 운영</strong></li>
+                        <li>카카오게임즈 PC방 서비스의 AWS 이관, CI/CD 배포 파이프라인 구축 및 레거시 리팩토링</li>
+                        <li>카카오게임즈 DM 발송 서비스의 고성능 비동기 아키텍처 설계 및 시스템 개발</li>
+                    </ul>
                     </div>
                 </section>
                 <hr>
                 <section>
                     <h2>주요 프로젝트 및 업무 성과</h2>
-                    
+                    <div class="card">
+                        <h3>카카오게임즈 DM 발송 시스템 개발</h3>
+                        <div class="tech-period">
+                            카카오게임즈, 2026.07 ~ 진행중
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Java 21</span>
+                            <span class="tech-tag">Spring Boot 3</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Caffeine Cache</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Architecture</span>
+                        </div>
+                        <div class="tech-subhead">
+                            수행 내용
+                        </div>
+                        <ul class="list-section">
+                            <li>Burst 10만 이상의 대량 요청 처리를 위한 신규 발송 시스템 설계 및 개발</li>
+                            <li>Pragmatic MSA 및 메시지 큐 기반 비동기 처리 아키텍처 구축</li>
+                            <li>발송 유형(Transaction / Campaign) 및 벤더별 ZSET Queueing 구조 설계</li>
+                            <li>Dirty Set 기반의 <strong>비동기 Bulk Sync 배치</strong>를 통한 RDB Write I/O 최소화</li>
+                        </ul>
+                        <div class="tech-subhead">
+                            성과
+                        </div>
+                        <ul class="list-section">
+                            <li>명확한 역할 분리로 레거시의 확장 한계를 극복하고 <strong>선형적 수평 확장(Scale-out) 구조 확보</strong></li>
+                            <li>수신 단 RDB Write 배제로 <strong>초당 대량 유입에도 안정적인 저지연 처리</strong></li>
+                            <li>캠페인 발송 중에도 실시간 알림(Transaction) 메시지의 <strong>우선순위 인출 및 Latency 0ms 보장</strong></li>
+                            <li>다단계 폴백 구조를 통한 <strong>외부 벤더사 장애 격리 및 발송 성공률 극대화</strong></li>
+                            <li>비동기 Bulk UPDATE 방식으로 <strong>RDB Write I/O 트래픽 99% 이상 절감</strong></li>
+                        </ul>
+                    </div>
+                    <hr>
                     <div class="card">
                         <h3>PC방 서비스 AWS 이관 및 구조 개선</h3>
                         <div class="tech-period">
@@ -118,33 +135,6 @@
                     </div>
                     <hr>
                     <div class="card">
-                        <h3>AWS SES 기반 이메일 발송 비용 및 평판 개선</h3>
-                        <div class="tech-period">
-                            카카오게임즈, 2025.01 ~ 2025.03
-                        </div>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Spring Boot</span>
-                            <span class="tech-tag">AWS SES</span>
-                            <span class="tech-tag">AI</span>
-                        </div>
-                        <div class="tech-subhead">
-                            수행 내용
-                        </div>
-                        <ul class="list-section">
-                            <li>기존 DM 발송 시스템에 저 비용 이메일 벤더인 <strong>AWS SES 연동 개발</strong></li>
-                            <li>생성형 AI를 활용한 의심 도메인 사전 필터링 로직 설계</li>
-                            <li>임시 메일, 봇 생성 주소 등 비정상 발송 대상 제거</li>
-                        </ul>
-                        <div class="tech-subhead">
-                            성과
-                        </div>
-                        <ul class="list-section">
-                            <li>발송 <strong>비용 평균 50% 이상 절감</strong></li>
-                            <li>AWS SES <strong>평판 지표 70.6% 개선</strong></li>                            
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="card">
                         <h3>사내 인공지능 서비스 도입 선행 연구</h3>
                         <div class="tech-period">
                             카카오게임즈, 2024.01 ~ 2024.04
@@ -172,6 +162,16 @@
                         </ul>
                     </div>
                 </section>
+                <hr>
+                <section>
+                    <h2>학력</h2>
+                    <div class="education-item">
+                        <h3>광운대학교 소프트웨어학부</h3>
+                        <ul class="list-section">
+                            <li>2014.03 ~ 2021.02</li>
+                        </ul>
+                    </div>
+                </section>                
             </div>
         </div>
     </div>
